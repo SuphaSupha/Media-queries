@@ -1,70 +1,37 @@
-body {margin: 0;}
-
-
+body,
+body * {
+    margin: 0;
+}
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 64px;
+    text-align: center;
 }
 
-
-.parent {
-    height: 300px;
-    background-color: brown;
-    font-size: 42px;
-    padding: 60px;
+header h1 {
+    margin: 12px 0px;
 }
 
-header nav a {
+nav a {
+    display: block;
     text-decoration: none;
-    margin: 0px 16px;
-    color: black;
     font-size: 20px;
+    color: black;
+    padding: 8px;
 }
 
-
-/* Žemesni nei 768px */
-@media screen and (max-width:768px) {
-    header {
-        padding: 0;
-        display: block;
-        text-align: center;
-    }
-    header h1 {
-        margin: 10px 0px;
-    }
-    header nav a {
-        display: block;
-        padding: 8px;
-        margin: 0px;
-    }
-    header nav a:hover {
-        background-color: blueviolet;
-        color: white;
-    }
-    .parent {
-        background-color: blue;
-
-    }
+nav a:hover {
+    background-color: black;
+    color: white;
 }
 
-
-
-/* zemesnis nei 982px  */
-@media screen and (min-width:768px) and (max-width: 982px) {
+@media screen and  (min-width:768px) {
     header {
-        padding: 0px 20px;
-       
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0 20px;
     }
+
     header nav a {
-        font-size: 18px;
+        display: inline;
     }
-    
-    .parent {
-    background-color: aqua;
-    font-size: 24px;
-    padding: 20px;
-    }
-    
 }
